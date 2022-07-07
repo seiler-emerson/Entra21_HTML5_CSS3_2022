@@ -11,6 +11,10 @@ body {
     padding: 10px;
 }
 
+nav {
+    text-align: center;
+}
+
 nav ul {
     padding: 10px;
     margin: 0px;
