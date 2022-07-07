@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerson - Contato</title>
     <link rel="stylesheet" href="css/site.css">
+    <style>
+        html {
+            background-color: lightseagreen;
+        }
+
+        nav a {
+            color: white;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        nav ul {
+            background-color: lightskyblue;
+        }
+
+        nav ul li:hover {
+            background-color: dodgerblue;
+        }
+
+        #limpar {
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 2px;
+        }
+
+        #enviar {
+            background-color: lightskyblue;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 2px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +57,29 @@
     </nav>
         
     <main>
-        <h2>Entre em contato!</h2>
+        <h2>Entre em contato.</h2>
+        <form action="mailto:seiler.emerson@gmail.com?subject=Contato via site pessoal" method="post"
+            enctype="text/plain">
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
+            <br>
+            <label for="telfone">Telefone: </label>
+            <input type="tel" telefone="telefone" id="telefone" placeholder="Insira o telefone" required>
+            <br>
+            <label for="assunto">Assunto: </label>
+            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <br>
+            <div class="button">
+                <input type="reset" value="Resetar" id="limpar">
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+            <hr>
+            <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=seiler.emerson@gmail.com&su=Contato+-+via+site+pessoal&body=Ol%C3%A1+Emerson,+Tudo+bem?&tf=cm" target="_blank">Prefere
+                gmail?</a>
+
+        </form>
     </main>
 
     <footer>
