@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Emerson - Contato</title>
+    <link rel="shortcut icon" href="/img/contact.png" type="image/png">
+    <link rel="stylesheet" href="./css/site.css">
+    <style>
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        form a {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .button {
+            width: 400px;
+            margin: auto;
+        }
+
+        #limpar, #enviar {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body class="grid grid-template">
+
+    <header class="item header">
+        <img src="/img/contact.png" alt="" >
+        Contato
+    </header>
+    <aside class="item sidenav">
+        <nav>
+            <ul >
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/cv.html">Curriculo</a></li>
+                <li><a href="/Contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="item content">
+        <h2>Entre em contato.</h2>
+        <form action="mailto:seiler.emerson@gmail.com?subject=Contato via site pessoal" method="post"
+            enctype="text/plain">
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome:" required>
+            <br>
+            <label for="telfone">Telefone: </label>
+            <input type="tel" telefone="telefone" id="telefone" placeholder="Insira o telefone" required>
+            <br>
+            <label for="assunto">Assunto: </label>
+            <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+            <br>
+            <div class="button">
+                <input type="reset" value="Resetar" id="limpar">
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+            <hr>
+            <a
+                href="https://mail.google.com/mail/u/0/?fs=1&to=seiler.emerson@gmail.com&su=Contato+-+via+site+pessoal&body=Ol%C3%A1+Emerson,+Tudo+bem?&tf=cm" target="_blank">Prefere
+                gmail?</a>
+
+        </form>
+    </main>
+    <footer class="item footer">
+        <hr>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Emerson - Currículo</title>
+    <link rel="shortcut icon" href="/img/cv.png" type="image/png">
+    <link rel="stylesheet" href="./css/site.css">
+    <style>
+        .entra21 {
+            grid-area: entra21;
+        }
+        .entra21 li:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+        .complementar {
+            grid-area: complementar;
+        }
+        .complementar li:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+        .grid-academico {
+            display: grid;
+            display: grid;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            gap: 4px;
+            grid-template-areas: "entra21 complementar";
+        }
+    </style>
+</head>
+
+<body class="grid grid-template">
+
+    <header class="item header">
+        <img src="/img/cv.png" alt="" >
+        Currículo
+    </header>
+    <aside class="item sidenav">
+        <nav>
+            <ul >
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/cv.html">Curriculo</a></li>
+                <li><a href="/Contato.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="item content">
+        Minhas informações academicas.
+        <section class="grid-academico">
+            <section class="item entra21">
+                <ol>
+                    <h4>Entra21</h4>
+                    <li>HTML e CSS</li>
+                    <li>Banco de Dados</li>
+                    <li>Java Avançado</li>
+                    <li>Programação Orientada a Objetos</li>
+                    <li>Lógica de Programação</li>
+                    <li>Inglês</li>
+                    <li>Metodologias Ágeis</li>
+                </ol>
+           </section>
+           <section class="item complementar">
+                <ol>
+                    <h3>Cursos Complementares</h3>
+                    <li>Curso em Vídeo - HTML/CSS</li>
+                    <li>Curso em Vídeo - JavaScript</li>
+                    <li>B7Web - HTML/CSS</li>
+                    <li>B7Web - JavaScript</li>
+                    <li>B7Web - TypeScript</li>
+                    <li>Dio - Git/Github</li>
+                    <li>Dio - Metodologias Ágeis</li>
+                </ol>
+           </section>
+        </section>
+
+       
+    </main>
+    <footer class="item footer">
+        <hr>
+    </footer>
+</body>
+</html>
