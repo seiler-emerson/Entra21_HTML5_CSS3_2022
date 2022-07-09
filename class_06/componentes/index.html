@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body class="container-fluid bg-secondary">
+    <p>bla bla bla bla bla bla bla</p>
+
+    <div class="row bg-primary">
+        <div class="col bg-secondary">linha 1</div>
+        <div class="col">Na mesma linha</div>
+        <div class="col bg-success">Eu também</div>
+    </div>
+
+    <div class="row bg-danger">
+        <div class="col-2 bg-warning">linha 2</div>
+        <div class="col">Na mesma linha</div>
+    </div>
+
+    <div class="row bg-info">
+        <div class="col-1 bg-dark text-white">Linha 3</div>
+        <div class="col">Mais um</div>
+        <div class="col-3 bg-light">Outro</div>
+        <div class="col">Mais outro</div>
+    </div>
+
+    <div class="row">
+        <div class="col bg-dark"></div>
+        <div class="col-1">Estou no meio</div>
+        <div class="col bg-dark"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 bg-danger">Texto</div>
+        <div class="col-1 bg-warning">Texto</div>
+    </div>
+
+    <div class="row">
+        <div class="alert alert-primary">PRIMARY ALERT</div>
+        <div class="alert alert-secondary">SECONDARY ALERT</div>
+        <div class="alert alert-white">WHITE ALERT</div>
+        <div class="alert alert-success">SUCCESS ALERT</div>
+        <div class="alert alert-danger">DANGER ALERT</div>
+        <div class="alert alert-warning">WARNING ALERT</div>
+        <div class="alert alert-light">LIGHT ALERT</div>
+        <div class="alert alert-dark">DARK ALERT</div>
+        <div class="alert alert-success alert-dismissible fade show">
+            <strong>ACREDITE</strong> se clicar no outro X algo acontece
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button class="btn">Botão</button>
+            <button class="btn btn-primary">Botão</button>
+            <button class="btn btn-secondary">Botão</button>
+            <button class="btn btn-white">Botão</button>
+            <button class="btn btn-success">Botão</button>
+            <button class="btn btn-danger">Botão</button>
+            <button class="btn btn-warning">Botão</button>
+            <button class="btn btn-light">Botão</button>
+            <button class="btn btn-dark">Botão</button>
+            <a href="#" class="btn btn-success">Link como botão</a>
+        </div>
+        <div class="col">
+            <button class="btn">Botão</button>
+            <button class="btn btn-outline-primary">Botão</button>
+            <button class="btn btn-outline-secondary">Botão</button>
+            <button class="btn btn-outline-white">Botão</button>
+            <button class="btn btn-outline-success">Botão</button>
+            <button class="btn btn-outline-danger">Botão</button>
+            <button class="btn btn-outline-warning">Botão</button>
+            <button class="btn btn-outline-light">Botão</button>
+            <button class="btn btn-outline-dark">Botão</button>
+            <a href="#" class="btn btn-outline-success">Link como botão</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h1>Produto <span class="badge bg-danger">ACABANDO!</span> </h1>
+            <button type="button" class="btn btn-primary me-5">
+                Notificações <span class="badge bg-danger">99+</span>
+            </button>
+            <button type="button" class="btn btn-primary position-relative mt-5 ms-5">
+                Notificações
+                <span class="position-absolute top-0 start-100 translate-middle badge bg-danger rounded-pill">99+</span>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-5">
+            <div class="card">
+                <div class="card-header">Título</div>
+                <div class="card-body">Conteúdo</div>
+                <div class="card-footer">Rodapé</div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card">
+                <form>
+                    <div class="card-header">Login</div>
+                    <div class="card-body">
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu email" class="form-control" required>
+                        <label for="senha">Senha: </label>
+                        <input type="password" value="123" name="senha" id="senha" placeholder="Informe sua senha" class="form-control" required>
+                    </div>
+                    <div class="card-footer">
+                        <input value="Limpar" type="reset" class="btn btn-secondary">
+                            
+                        </input>
+                        <input value="Logar" type="submit" class="btn btn-success">
+                            
+                        </input>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
